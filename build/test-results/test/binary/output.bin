@@ -1,0 +1,436 @@
+{2018-10-02 12:54:32,258 |Test worker          |UtilURL                       |W| No ofbiz.home property set in environment
+{2018-10-02 12:54:32,273 |Test worker          |UtilURL                       |W| No ofbiz.home property set in environment
+{2018-10-02 12:54:32,274 |Test worker          |UtilURL                       |W| No ofbiz.home property set in environment
+ì2018-10-02 12:54:32,286 |Test worker          |ComponentLocationResolver     |E| Could not get root location for component with name [base], error was: org.apache.ofbiz.base.component.ComponentException: No component found named : base
+Torg.apache.ofbiz.base.component.ComponentException: No component found named : base
+l	at org.apache.ofbiz.base.component.ComponentConfig.getComponentConfig(ComponentConfig.java:258) ~[main/:?]
+l	at org.apache.ofbiz.base.component.ComponentConfig.getComponentConfig(ComponentConfig.java:239) ~[main/:?]
+i	at org.apache.ofbiz.base.component.ComponentConfig.getRootLocation(ComponentConfig.java:286) ~[main/:?]
+{	at org.apache.ofbiz.base.location.ComponentLocationResolver.getBaseLocation(ComponentLocationResolver.java:67) ~[main/:?]
+{	at org.apache.ofbiz.base.location.ComponentLocationResolver.resolveLocation(ComponentLocationResolver.java:41) ~[main/:?]
+j	at org.apache.ofbiz.base.location.FlexibleLocation.resolveLocation(FlexibleLocation.java:117) ~[main/:?]
+j	at org.apache.ofbiz.base.location.FlexibleLocation.resolveLocation(FlexibleLocation.java:103) ~[main/:?]
+e	at org.apache.ofbiz.base.util.GroovyUtil.getScriptClassFromLocation(GroovyUtil.java:154) ~[main/:?]
+^	at org.apache.ofbiz.base.util.GroovyUtil.runScriptAtLocation(GroovyUtil.java:206) ~[main/:?]
+R	at org.apache.ofbiz.base.util.GroovyUtil.<clinit>(GroovyUtil.java:66) ~[main/:?]
+_	at org.apache.ofbiz.widget.model.ModelFormField.shouldUse(ModelFormField.java:895) ~[main/:?]
+k	at org.apache.ofbiz.widget.renderer.FormRenderer.lambda$getUsedFields$3(FormRenderer.java:680) ~[main/:?]
+\	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174) [?:1.8.0_181]
+a	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382) [?:1.8.0_181]
+X	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) [?:1.8.0_181]
+_	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) [?:1.8.0_181]
+]	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) [?:1.8.0_181]
+X	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:1.8.0_181]
+Y	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) [?:1.8.0_181]
+a	at org.apache.ofbiz.widget.renderer.FormRenderer.getUsedFields(FormRenderer.java:688) [main/:?]
+u	at org.apache.ofbiz.widget.renderer.FormRendererTest.fieldsToRenderBasicUseWhen(FormRendererTest.java:85) [test/:?]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+l	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+k	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+j	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+i	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+e	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:?]
+U	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+i	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+i	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+S	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+W	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+Y	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+W	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+X	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+Q	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+š	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+”	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+Ÿ	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+š	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-3.2.1.jar:3.2.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.2.1.jar:3.2.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.2.1.jar:3.2.1]
+Œ	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-3.2.1.jar:3.2.1]
+›	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-3.2.1.jar:3.2.1]
+A	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [?:?]
+ˆ	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-3.2.1.jar:3.2.1]
+O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.2.1.jar:3.2.1]
+|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.2.1.jar:3.2.1]
+{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377) [gradle-messaging-3.2.1.jar:3.2.1]
+’	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54) [gradle-base-services-3.2.1.jar:3.2.1]
+…	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40) [gradle-base-services-3.2.1.jar:3.2.1]
+b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_181]
+b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_181]
+8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_181]
+ý2018-10-02 12:54:32,293 |Test worker          |GroovyUtil                    |W| The following error occurred during the initialization of Groovy: Error loading Groovy script at [component://base/config/GroovyInit.groovy]:  (Could not get root location for component with name [base], error was: org.apache.ofbiz.base.component.ComponentException: No component found named : base)
+2018-10-02 12:54:32,309 |Test worker          |ScriptUtil                    |I| The following 2 scripting engines were found:
+v2018-10-02 12:54:32,310 |Test worker          |ScriptUtil                    |I| Engine name: Groovy Scripting Engine
+`2018-10-02 12:54:32,310 |Test worker          |ScriptUtil                    |I|   Version: 2.0
+d2018-10-02 12:54:32,310 |Test worker          |ScriptUtil                    |I|   Language: Groovy
+}2018-10-02 12:54:32,310 |Test worker          |ScriptUtil                    |I|   Engine supports the following extensions:
+\2018-10-02 12:54:32,310 |Test worker          |ScriptUtil                    |I|     groovy
+y2018-10-02 12:54:32,310 |Test worker          |ScriptUtil                    |I|   Engine has the following short names:
+\2018-10-02 12:54:32,310 |Test worker          |ScriptUtil                    |I|     groovy
+\2018-10-02 12:54:32,310 |Test worker          |ScriptUtil                    |I|     Groovy
+m2018-10-02 12:54:32,310 |Test worker          |ScriptUtil                    |I| Engine name: Oracle Nashorn
+f2018-10-02 12:54:32,314 |Test worker          |ScriptUtil                    |I|   Version: 1.8.0_181
+h2018-10-02 12:54:32,314 |Test worker          |ScriptUtil                    |I|   Language: ECMAScript
+}2018-10-02 12:54:32,314 |Test worker          |ScriptUtil                    |I|   Engine supports the following extensions:
+X2018-10-02 12:54:32,314 |Test worker          |ScriptUtil                    |I|     js
+y2018-10-02 12:54:32,314 |Test worker          |ScriptUtil                    |I|   Engine has the following short names:
+]2018-10-02 12:54:32,314 |Test worker          |ScriptUtil                    |I|     nashorn
+]2018-10-02 12:54:32,314 |Test worker          |ScriptUtil                    |I|     Nashorn
+X2018-10-02 12:54:32,315 |Test worker          |ScriptUtil                    |I|     js
+X2018-10-02 12:54:32,315 |Test worker          |ScriptUtil                    |I|     JS
+`2018-10-02 12:54:32,315 |Test worker          |ScriptUtil                    |I|     JavaScript
+`2018-10-02 12:54:32,315 |Test worker          |ScriptUtil                    |I|     javascript
+`2018-10-02 12:54:32,315 |Test worker          |ScriptUtil                    |I|     ECMAScript
+`2018-10-02 12:54:32,316 |Test worker          |ScriptUtil                    |I|     ecmascript
+  ¿2018-10-02 12:54:33,727 |Test worker          |UtilCodec                     |E| Canonicalization (format consistency, character escaping that is mixed or double, etc) error for attribute named [double-encoding], String [%2%353Cscript]: org.apache.ofbiz.base.util.UtilCodec$IntrusionException: Input validation failure
+ !Ù2018-10-02 12:54:33,984 |Test worker          |UtilXml                       |W| [UtilXml.LocalResolver.resolveEntity] could not find LOCAL DTD/Schema with publicId [null] and the file/resource is [entity-config.xsd]
+ "ˆ2018-10-02 12:54:34,717 |delegator-startup-1  |DelegatorFactoryImpl          |I| Creating new delegator [default] (delegator-startup-1)
+ "¸2018-10-02 12:54:34,720 |delegator-startup-1  |ModelReader                   |I| Finished loading entities; #Entities=0 #ViewEntities=0 #Fields=0 #Relationships=0 #AutoRelationships=0
+ "r2018-10-02 12:54:34,723 |delegator-startup-1  |GenericDelegator              |I| Doing entity definition check...
+ "y2018-10-02 12:54:34,726 |delegator-startup-1  |ModelEntityChecker            |I| [initReservedWords] array length = 1025
+ "«2018-10-02 12:54:34,729 |OFBiz-batch-1        |GenericDelegator              |I| Delegator "default" initializing helper "localmysql" for entity group "org.apache.ofbiz".
+ "Ù2018-10-02 12:54:34,737 |OFBiz-batch-1        |UtilXml                       |W| [UtilXml.LocalResolver.resolveEntity] could not find LOCAL DTD/Schema with publicId [null] and the file/resource is [entity-config.xsd]
+ "Ú2018-10-02 12:54:34,938 |OFBiz-batch-1        |UtilXml                       |W| [UtilXml.LocalResolver.resolveEntity] could not find LOCAL DTD/Schema with publicId [null] and the file/resource is [fieldtypemodel.xsd]
+ "œ2018-10-02 12:54:35,107 |OFBiz-batch-1        |GenericDelegator              |I| Doing database check as requested in entityengine.xml with addMissing=true
+  "ãLoading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+  "„Tue Oct 02 12:54:35 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+ "p2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Product Name is MySQL
+ "t2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Product Version is 8.0.12
+ "{2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Driver Name is MySQL Connector/J
+ "½2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Driver Version is mysql-connector-java-8.0.12 (Revision: 24766725dc6e017025532146d94c6e6c488fb8f1)
+ "u2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Driver JDBC Version is 4.2
+ "—2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Setting/Support Information (those with a * should be true):
+ "u2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - supports transactions     [true]*
+ "u2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - isolation None            [false]
+ "t2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - isolation ReadCommitted   [true]
+ "t2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - isolation ReadUncommitted [true]
+ "t2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - isolation RepeatableRead  [true]
+ "t2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - isolation Serializable    [true]
+ "u2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - forward only type         [false]
+ "u2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - scroll sensitive type     [false]
+ "t2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - scroll insensitive type   [true]
+ "t2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - is case sensitive         [true]
+ "u2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - stores LowerCase          [false]
+ "t2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - stores MixedCase          [true]
+ "u2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - stores UpperCase          [false]
+ "r2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - max table name length     [64]
+ "r2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - max column name length    [64]
+ "q2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - concurrent connections    [0]
+ "q2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - concurrent statements     [0]
+ "t2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ANSI SQL92 Entry          [true]
+ "u2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ANSI SQL92 Intermediate   [false]
+ "u2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ANSI SQL92 Full           [false]
+ "t2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ODBC SQL Grammar Core     [true]
+ "u2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ODBC SQL Grammar Extended [false]
+ "t2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ODBC SQL Grammar Minimum  [true]
+ "u2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - outer joins               [true]*
+ "t2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - limited outer joins       [true]
+ "u2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - full outer joins          [false]
+ "u2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - group by                  [true]*
+ "t2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - group by not in select    [true]
+ "t2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - column aliasing           [true]
+ "u2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - order by not in select    [false]
+ "u2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - alter table add column    [true]*
+ "u2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - non-nullable column       [true]*
+ "p2018-10-02 12:54:35,888 |OFBiz-batch-1        |DatabaseUtil                  |I| - default fetchsize        [0]
+ "x2018-10-02 12:54:35,888 |OFBiz-batch-1        |DatabaseUtil                  |I| - named parameters         [ SKIPPED ]
+ "r2018-10-02 12:54:35,888 |OFBiz-batch-1        |DatabaseUtil                  |I| Getting Table Info From Database
+  ™2018-10-02 12:54:35,928 |Test worker          |DelegatorFactoryImpl          |I| Creating new delegator [delegatorNameWithNoConfiguration] (Test worker)
+ $€2018-10-02 12:54:35,929 |Test worker          |DelegatorFactoryImpl          |I| Creating new delegator [default] (Test worker)
+ $r2018-10-02 12:54:35,929 |Test worker          |GenericDelegator              |I| Doing entity definition check...
+ $y2018-10-02 12:54:35,929 |Test worker          |ModelEntityChecker            |I| [initReservedWords] array length = 1025
+ $«2018-10-02 12:54:35,930 |OFBiz-batch-3        |GenericDelegator              |I| Delegator "default" initializing helper "localmysql" for entity group "org.apache.ofbiz".
+ $œ2018-10-02 12:54:35,930 |OFBiz-batch-3        |GenericDelegator              |I| Doing database check as requested in entityengine.xml with addMissing=true
+ $p2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Product Name is MySQL
+ $t2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Product Version is 8.0.12
+ ${2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver Name is MySQL Connector/J
+ $½2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver Version is mysql-connector-java-8.0.12 (Revision: 24766725dc6e017025532146d94c6e6c488fb8f1)
+ $u2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver JDBC Version is 4.2
+ $—2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Setting/Support Information (those with a * should be true):
+ $u2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - supports transactions     [true]*
+ $u2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation None            [false]
+ $t2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation ReadCommitted   [true]
+ $t2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation ReadUncommitted [true]
+ $t2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation RepeatableRead  [true]
+ $t2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation Serializable    [true]
+ $u2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - forward only type         [false]
+ $u2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - scroll sensitive type     [false]
+ $t2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - scroll insensitive type   [true]
+ $t2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - is case sensitive         [true]
+ $u2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores LowerCase          [false]
+ $t2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores MixedCase          [true]
+ $u2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores UpperCase          [false]
+ $r2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - max table name length     [64]
+ $r2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - max column name length    [64]
+ $q2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - concurrent connections    [0]
+ $q2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - concurrent statements     [0]
+ $t2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Entry          [true]
+ $u2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Intermediate   [false]
+ $u2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Full           [false]
+ $t2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Core     [true]
+ $u2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Extended [false]
+ $t2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Minimum  [true]
+ $u2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - outer joins               [true]*
+ $t2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - limited outer joins       [true]
+ $u2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - full outer joins          [false]
+ $u2018-10-02 12:54:35,937 |OFBiz-batch-3        |DatabaseUtil                  |I| - group by                  [true]*
+ $t2018-10-02 12:54:35,937 |OFBiz-batch-3        |DatabaseUtil                  |I| - group by not in select    [true]
+ $t2018-10-02 12:54:35,937 |OFBiz-batch-3        |DatabaseUtil                  |I| - column aliasing           [true]
+ $u2018-10-02 12:54:35,937 |OFBiz-batch-3        |DatabaseUtil                  |I| - order by not in select    [false]
+ $u2018-10-02 12:54:35,938 |OFBiz-batch-3        |DatabaseUtil                  |I| - alter table add column    [true]*
+ $u2018-10-02 12:54:35,938 |OFBiz-batch-3        |DatabaseUtil                  |I| - non-nullable column       [true]*
+ $p2018-10-02 12:54:35,938 |OFBiz-batch-3        |DatabaseUtil                  |I| - default fetchsize        [0]
+ $x2018-10-02 12:54:35,938 |OFBiz-batch-3        |DatabaseUtil                  |I| - named parameters         [ SKIPPED ]
+ $r2018-10-02 12:54:35,938 |OFBiz-batch-3        |DatabaseUtil                  |I| Getting Table Info From Database
+ $€2018-10-02 12:54:35,944 |Test worker          |DelegatorFactoryImpl          |I| Creating new delegator [default] (Test worker)
+ $r2018-10-02 12:54:35,944 |Test worker          |GenericDelegator              |I| Doing entity definition check...
+ $y2018-10-02 12:54:35,944 |Test worker          |ModelEntityChecker            |I| [initReservedWords] array length = 1025
+ $«2018-10-02 12:54:35,944 |OFBiz-batch-3        |GenericDelegator              |I| Delegator "default" initializing helper "localmysql" for entity group "org.apache.ofbiz".
+ $œ2018-10-02 12:54:35,945 |OFBiz-batch-3        |GenericDelegator              |I| Doing database check as requested in entityengine.xml with addMissing=true
+ $p2018-10-02 12:54:35,947 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Product Name is MySQL
+ $t2018-10-02 12:54:35,947 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Product Version is 8.0.12
+ ${2018-10-02 12:54:35,947 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver Name is MySQL Connector/J
+ $½2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver Version is mysql-connector-java-8.0.12 (Revision: 24766725dc6e017025532146d94c6e6c488fb8f1)
+ $u2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver JDBC Version is 4.2
+ $—2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Setting/Support Information (those with a * should be true):
+ $u2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - supports transactions     [true]*
+ $u2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation None            [false]
+ $t2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation ReadCommitted   [true]
+ $t2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation ReadUncommitted [true]
+ $t2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation RepeatableRead  [true]
+ $t2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation Serializable    [true]
+ $u2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - forward only type         [false]
+ $u2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - scroll sensitive type     [false]
+ $t2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - scroll insensitive type   [true]
+ $t2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - is case sensitive         [true]
+ $u2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores LowerCase          [false]
+ $t2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores MixedCase          [true]
+ $u2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores UpperCase          [false]
+ $r2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - max table name length     [64]
+ $r2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - max column name length    [64]
+ $q2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - concurrent connections    [0]
+ $q2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - concurrent statements     [0]
+ $t2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Entry          [true]
+ $u2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Intermediate   [false]
+ $u2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Full           [false]
+ $t2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Core     [true]
+ $u2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Extended [false]
+ $t2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Minimum  [true]
+ $u2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - outer joins               [true]*
+ $t2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - limited outer joins       [true]
+ $u2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - full outer joins          [false]
+ $u2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - group by                  [true]*
+ $t2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - group by not in select    [true]
+ $t2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - column aliasing           [true]
+ $u2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - order by not in select    [false]
+ $u2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - alter table add column    [true]*
+ $u2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - non-nullable column       [true]*
+ $p2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - default fetchsize        [0]
+ $x2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - named parameters         [ SKIPPED ]
+ $r2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| Getting Table Info From Database
+ %r2018-10-02 12:54:35,958 |Test worker          |GenericDelegator              |I| Doing entity definition check...
+ %y2018-10-02 12:54:35,958 |Test worker          |ModelEntityChecker            |I| [initReservedWords] array length = 1025
+ %«2018-10-02 12:54:35,958 |OFBiz-batch-2        |GenericDelegator              |I| Delegator "default" initializing helper "localmysql" for entity group "org.apache.ofbiz".
+ %œ2018-10-02 12:54:35,958 |OFBiz-batch-2        |GenericDelegator              |I| Doing database check as requested in entityengine.xml with addMissing=true
+ %p2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Product Name is MySQL
+ %t2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Product Version is 8.0.12
+ %{2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Driver Name is MySQL Connector/J
+ %½2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Driver Version is mysql-connector-java-8.0.12 (Revision: 24766725dc6e017025532146d94c6e6c488fb8f1)
+ %u2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Driver JDBC Version is 4.2
+ %—2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Setting/Support Information (those with a * should be true):
+ %u2018-10-02 12:54:35,961 |OFBiz-batch-2        |DatabaseUtil                  |I| - supports transactions     [true]*
+ %u2018-10-02 12:54:35,961 |OFBiz-batch-2        |DatabaseUtil                  |I| - isolation None            [false]
+ %t2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - isolation ReadCommitted   [true]
+ %t2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - isolation ReadUncommitted [true]
+ %t2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - isolation RepeatableRead  [true]
+ %t2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - isolation Serializable    [true]
+ %u2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - forward only type         [false]
+ %u2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - scroll sensitive type     [false]
+ %t2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - scroll insensitive type   [true]
+ %t2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - is case sensitive         [true]
+ %u2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - stores LowerCase          [false]
+ %t2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - stores MixedCase          [true]
+ %u2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - stores UpperCase          [false]
+ %r2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - max table name length     [64]
+ %r2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - max column name length    [64]
+ %q2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - concurrent connections    [0]
+ %q2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - concurrent statements     [0]
+ %t2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - ANSI SQL92 Entry          [true]
+ %u2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - ANSI SQL92 Intermediate   [false]
+ %u2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - ANSI SQL92 Full           [false]
+ %t2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - ODBC SQL Grammar Core     [true]
+ %u2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - ODBC SQL Grammar Extended [false]
+ %t2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - ODBC SQL Grammar Minimum  [true]
+ %u2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - outer joins               [true]*
+& u2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - full outer joins          [false]
+& u2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - group by                  [true]*
+& t2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - group by not in select    [true]
+& t2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - column aliasing           [true]
+& u2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - order by not in select    [false]
+& u2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - alter table add column    [true]*
+&'u2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - non-nullable column       [true]*
+&'p2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - default fetchsize        [0]
+&'x2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - named parameters         [ SKIPPED ]
+&'r2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| Getting Table Info From Database
+&(ƒ2018-10-02 12:54:37,108 |Test worker          |EntitySaxReader               |I| Transaction Timeout set to 2 hours (7200 seconds)
+& y2018-10-02 12:54:37,110 |Test worker          |EntitySaxReader               |I| Finished 1 values from Internal Content
+?@ƒ2018-10-02 12:54:38,219 |Test worker          |ControlFilter                 |W| Error code specified would not parse to Integer: 
+?@6java.lang.NumberFormatException: For input string: ""
+?@a	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_181]
+?@@	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_181]
+?@@	at java.lang.Integer.parseInt(Integer.java:615) ~[?:1.8.0_181]
+?@X	at org.apache.ofbiz.webapp.control.ControlFilter.init(ControlFilter.java:83) [main/:?]
+?@u	at org.apache.ofbiz.webapp.control.ControlFilterTests.initSetsProperErrorCode(ControlFilterTests.java:53) [test/:?]
+?@O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+?@a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+?@i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+?@D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+?@l	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+?@k	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+?@j	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+?@i	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+?@U	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+?@i	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+?@i	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+?@S	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+?@W	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+?@Y	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+?@W	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+?@X	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+?@Q	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+?@š	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+?@”	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+?@Ÿ	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+?@š	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-3.2.1.jar:3.2.1]
+?@O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+?@a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+?@i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+?@D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.2.1.jar:3.2.1]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.2.1.jar:3.2.1]
+?@Œ	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-3.2.1.jar:3.2.1]
+?@›	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-3.2.1.jar:3.2.1]
+?@A	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [?:?]
+?@ˆ	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-3.2.1.jar:3.2.1]
+?@O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+?@a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+?@i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+?@D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.2.1.jar:3.2.1]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.2.1.jar:3.2.1]
+?@{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377) [gradle-messaging-3.2.1.jar:3.2.1]
+?@’	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54) [gradle-base-services-3.2.1.jar:3.2.1]
+?@…	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40) [gradle-base-services-3.2.1.jar:3.2.1]
+?@b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_181]
+?@b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_181]
+?@8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_181]
+?@z2018-10-02 12:54:38,220 |Test worker          |ControlFilter                 |W| The default error code will be used: 403
+?@6java.lang.NumberFormatException: For input string: ""
+?@a	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_181]
+?@@	at java.lang.Integer.parseInt(Integer.java:592) ~[?:1.8.0_181]
+?@@	at java.lang.Integer.parseInt(Integer.java:615) ~[?:1.8.0_181]
+?@X	at org.apache.ofbiz.webapp.control.ControlFilter.init(ControlFilter.java:83) [main/:?]
+?@u	at org.apache.ofbiz.webapp.control.ControlFilterTests.initSetsProperErrorCode(ControlFilterTests.java:53) [test/:?]
+?@O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+?@a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+?@i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+?@D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+?@l	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+?@k	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+?@j	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+?@i	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+?@U	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+?@i	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+?@i	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+?@S	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+?@W	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+?@Y	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+?@W	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+?@X	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+?@Q	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+?@š	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+?@”	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+?@Ÿ	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+?@š	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-3.2.1.jar:3.2.1]
+?@O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+?@a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+?@i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+?@D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.2.1.jar:3.2.1]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.2.1.jar:3.2.1]
+?@Œ	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-3.2.1.jar:3.2.1]
+?@›	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-3.2.1.jar:3.2.1]
+?@A	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [?:?]
+?@ˆ	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-3.2.1.jar:3.2.1]
+?@O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+?@a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+?@i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+?@D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.2.1.jar:3.2.1]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.2.1.jar:3.2.1]
+?@{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377) [gradle-messaging-3.2.1.jar:3.2.1]
+?@’	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54) [gradle-base-services-3.2.1.jar:3.2.1]
+?@…	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40) [gradle-base-services-3.2.1.jar:3.2.1]
+?@b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_181]
+?@b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_181]
+?@8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_181]
+?@†2018-10-02 12:54:38,229 |Test worker          |ControlFilter                 |W| Error code specified would not parse to Integer: NaN
+?@9java.lang.NumberFormatException: For input string: "NaN"
+?@a	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_181]
+?@@	at java.lang.Integer.parseInt(Integer.java:580) ~[?:1.8.0_181]
+?@@	at java.lang.Integer.parseInt(Integer.java:615) ~[?:1.8.0_181]
+?@X	at org.apache.ofbiz.webapp.control.ControlFilter.init(ControlFilter.java:83) [main/:?]
+?@u	at org.apache.ofbiz.webapp.control.ControlFilterTests.initSetsProperErrorCode(ControlFilterTests.java:57) [test/:?]
+?@O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+?@a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+?@i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+?@D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+?@l	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:?]
+?@k	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+?@j	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:?]
+?@i	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:?]
+?@U	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:?]
+?@i	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:?]
+?@i	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:?]
+?@S	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+?@W	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+?@Y	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+?@W	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+?@X	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+?@Q	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+?@š	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+?@”	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+?@Ÿ	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-3.2.1.jar:3.2.1]
+?@š	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-3.2.1.jar:3.2.1]
+?@O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+?@a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+?@i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+?@D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.2.1.jar:3.2.1]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.2.1.jar:3.2.1]
+?@Œ	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-3.2.1.jar:3.2.1]
+?@›	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-3.2.1.jar:3.2.1]
+?@A	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [?:?]
+?@ˆ	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-3.2.1.jar:3.2.1]
+?@O	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+?@a	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+?@i	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+?@D	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.2.1.jar:3.2.1]
+?@|	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.2.1.jar:3.2.1]
+?@{	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377) [gradle-messaging-3.2.1.jar:3.2.1]
+?@’	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54) [gradle-base-services-3.2.1.jar:3.2.1]
+?@…	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40) [gradle-base-services-3.2.1.jar:3.2.1]
+?@b	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_181]
+?@b	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_181]
+?@8	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_181]

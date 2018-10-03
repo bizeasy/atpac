@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.ofbiz.webapp.control.RequestHandlerTests$ResolveURITests" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-10-02T07:24:38" hostname="vikram-workstation" time="0.142">
+  <properties/>
+  <testcase name="resolveURIBasicOverrideView" classname="org.apache.ofbiz.webapp.control.RequestHandlerTests$ResolveURITests" time="0.128"/>
+  <testcase name="resolveURIUpperCase" classname="org.apache.ofbiz.webapp.control.RequestHandlerTests$ResolveURITests" time="0.002"/>
+  <testcase name="resolveURIMissingOverrideView" classname="org.apache.ofbiz.webapp.control.RequestHandlerTests$ResolveURITests" time="0.002"/>
+  <testcase name="resolveURIDefault" classname="org.apache.ofbiz.webapp.control.RequestHandlerTests$ResolveURITests" time="0.002"/>
+  <testcase name="resolveURINoDefault" classname="org.apache.ofbiz.webapp.control.RequestHandlerTests$ResolveURITests" time="0.003"/>
+  <testcase name="resolveURIBasic" classname="org.apache.ofbiz.webapp.control.RequestHandlerTests$ResolveURITests" time="0.003"/>
+  <testcase name="resolveURIBasicPut" classname="org.apache.ofbiz.webapp.control.RequestHandlerTests$ResolveURITests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

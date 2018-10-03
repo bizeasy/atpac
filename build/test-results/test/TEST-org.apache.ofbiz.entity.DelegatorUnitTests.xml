@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.ofbiz.entity.DelegatorUnitTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-10-02T07:24:33" hostname="vikram-workstation" time="2.238">
+  <properties/>
+  <testcase name="delegatorCreationUsingConstructorFailsIfConfigurationIsMissing" classname="org.apache.ofbiz.entity.DelegatorUnitTests" time="0.976"/>
+  <testcase name="delegatorCreationUsingFactoryGetDelegator" classname="org.apache.ofbiz.entity.DelegatorUnitTests" time="1.22"/>
+  <testcase name="delegatorCreationUsingFactoryReturnsNullIfConfigurationIsMissing" classname="org.apache.ofbiz.entity.DelegatorUnitTests" time="0.0"/>
+  <testcase name="delegatorCreationUsingFactoryGetInstance" classname="org.apache.ofbiz.entity.DelegatorUnitTests" time="0.029"/>
+  <testcase name="delegatorCreationUsingConstructor" classname="org.apache.ofbiz.entity.DelegatorUnitTests" time="0.011"/>
+  <system-out><![CDATA[2018-10-02 12:54:33,727 |Test worker          |UtilCodec                     |E| Canonicalization (format consistency, character escaping that is mixed or double, etc) error for attribute named [double-encoding], String [%2%353Cscript]: org.apache.ofbiz.base.util.UtilCodec$IntrusionException: Input validation failure
+2018-10-02 12:54:33,984 |Test worker          |UtilXml                       |W| [UtilXml.LocalResolver.resolveEntity] could not find LOCAL DTD/Schema with publicId [null] and the file/resource is [entity-config.xsd]
+2018-10-02 12:54:34,717 |delegator-startup-1  |DelegatorFactoryImpl          |I| Creating new delegator [default] (delegator-startup-1)
+2018-10-02 12:54:34,720 |delegator-startup-1  |ModelReader                   |I| Finished loading entities; #Entities=0 #ViewEntities=0 #Fields=0 #Relationships=0 #AutoRelationships=0
+2018-10-02 12:54:34,723 |delegator-startup-1  |GenericDelegator              |I| Doing entity definition check...
+2018-10-02 12:54:34,726 |delegator-startup-1  |ModelEntityChecker            |I| [initReservedWords] array length = 1025
+2018-10-02 12:54:34,729 |OFBiz-batch-1        |GenericDelegator              |I| Delegator "default" initializing helper "localmysql" for entity group "org.apache.ofbiz".
+2018-10-02 12:54:34,737 |OFBiz-batch-1        |UtilXml                       |W| [UtilXml.LocalResolver.resolveEntity] could not find LOCAL DTD/Schema with publicId [null] and the file/resource is [entity-config.xsd]
+2018-10-02 12:54:34,938 |OFBiz-batch-1        |UtilXml                       |W| [UtilXml.LocalResolver.resolveEntity] could not find LOCAL DTD/Schema with publicId [null] and the file/resource is [fieldtypemodel.xsd]
+2018-10-02 12:54:35,107 |OFBiz-batch-1        |GenericDelegator              |I| Doing database check as requested in entityengine.xml with addMissing=true
+2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Product Name is MySQL
+2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Product Version is 8.0.12
+2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Driver Name is MySQL Connector/J
+2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Driver Version is mysql-connector-java-8.0.12 (Revision: 24766725dc6e017025532146d94c6e6c488fb8f1)
+2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Driver JDBC Version is 4.2
+2018-10-02 12:54:35,875 |OFBiz-batch-1        |DatabaseUtil                  |I| Database Setting/Support Information (those with a * should be true):
+2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - supports transactions     [true]*
+2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - isolation None            [false]
+2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - isolation ReadCommitted   [true]
+2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - isolation ReadUncommitted [true]
+2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - isolation RepeatableRead  [true]
+2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - isolation Serializable    [true]
+2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - forward only type         [false]
+2018-10-02 12:54:35,876 |OFBiz-batch-1        |DatabaseUtil                  |I| - scroll sensitive type     [false]
+2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - scroll insensitive type   [true]
+2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - is case sensitive         [true]
+2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - stores LowerCase          [false]
+2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - stores MixedCase          [true]
+2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - stores UpperCase          [false]
+2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - max table name length     [64]
+2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - max column name length    [64]
+2018-10-02 12:54:35,877 |OFBiz-batch-1        |DatabaseUtil                  |I| - concurrent connections    [0]
+2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - concurrent statements     [0]
+2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ANSI SQL92 Entry          [true]
+2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ANSI SQL92 Intermediate   [false]
+2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ANSI SQL92 Full           [false]
+2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ODBC SQL Grammar Core     [true]
+2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ODBC SQL Grammar Extended [false]
+2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - ODBC SQL Grammar Minimum  [true]
+2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - outer joins               [true]*
+2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - limited outer joins       [true]
+2018-10-02 12:54:35,878 |OFBiz-batch-1        |DatabaseUtil                  |I| - full outer joins          [false]
+2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - group by                  [true]*
+2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - group by not in select    [true]
+2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - column aliasing           [true]
+2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - order by not in select    [false]
+2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - alter table add column    [true]*
+2018-10-02 12:54:35,879 |OFBiz-batch-1        |DatabaseUtil                  |I| - non-nullable column       [true]*
+2018-10-02 12:54:35,888 |OFBiz-batch-1        |DatabaseUtil                  |I| - default fetchsize        [0]
+2018-10-02 12:54:35,888 |OFBiz-batch-1        |DatabaseUtil                  |I| - named parameters         [ SKIPPED ]
+2018-10-02 12:54:35,888 |OFBiz-batch-1        |DatabaseUtil                  |I| Getting Table Info From Database
+2018-10-02 12:54:35,928 |Test worker          |DelegatorFactoryImpl          |I| Creating new delegator [delegatorNameWithNoConfiguration] (Test worker)
+2018-10-02 12:54:35,929 |Test worker          |DelegatorFactoryImpl          |I| Creating new delegator [default] (Test worker)
+2018-10-02 12:54:35,929 |Test worker          |GenericDelegator              |I| Doing entity definition check...
+2018-10-02 12:54:35,929 |Test worker          |ModelEntityChecker            |I| [initReservedWords] array length = 1025
+2018-10-02 12:54:35,930 |OFBiz-batch-3        |GenericDelegator              |I| Delegator "default" initializing helper "localmysql" for entity group "org.apache.ofbiz".
+2018-10-02 12:54:35,930 |OFBiz-batch-3        |GenericDelegator              |I| Doing database check as requested in entityengine.xml with addMissing=true
+2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Product Name is MySQL
+2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Product Version is 8.0.12
+2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver Name is MySQL Connector/J
+2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver Version is mysql-connector-java-8.0.12 (Revision: 24766725dc6e017025532146d94c6e6c488fb8f1)
+2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver JDBC Version is 4.2
+2018-10-02 12:54:35,933 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Setting/Support Information (those with a * should be true):
+2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - supports transactions     [true]*
+2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation None            [false]
+2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation ReadCommitted   [true]
+2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation ReadUncommitted [true]
+2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation RepeatableRead  [true]
+2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation Serializable    [true]
+2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - forward only type         [false]
+2018-10-02 12:54:35,934 |OFBiz-batch-3        |DatabaseUtil                  |I| - scroll sensitive type     [false]
+2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - scroll insensitive type   [true]
+2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - is case sensitive         [true]
+2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores LowerCase          [false]
+2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores MixedCase          [true]
+2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores UpperCase          [false]
+2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - max table name length     [64]
+2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - max column name length    [64]
+2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - concurrent connections    [0]
+2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - concurrent statements     [0]
+2018-10-02 12:54:35,935 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Entry          [true]
+2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Intermediate   [false]
+2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Full           [false]
+2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Core     [true]
+2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Extended [false]
+2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Minimum  [true]
+2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - outer joins               [true]*
+2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - limited outer joins       [true]
+2018-10-02 12:54:35,936 |OFBiz-batch-3        |DatabaseUtil                  |I| - full outer joins          [false]
+2018-10-02 12:54:35,937 |OFBiz-batch-3        |DatabaseUtil                  |I| - group by                  [true]*
+2018-10-02 12:54:35,937 |OFBiz-batch-3        |DatabaseUtil                  |I| - group by not in select    [true]
+2018-10-02 12:54:35,937 |OFBiz-batch-3        |DatabaseUtil                  |I| - column aliasing           [true]
+2018-10-02 12:54:35,937 |OFBiz-batch-3        |DatabaseUtil                  |I| - order by not in select    [false]
+2018-10-02 12:54:35,938 |OFBiz-batch-3        |DatabaseUtil                  |I| - alter table add column    [true]*
+2018-10-02 12:54:35,938 |OFBiz-batch-3        |DatabaseUtil                  |I| - non-nullable column       [true]*
+2018-10-02 12:54:35,938 |OFBiz-batch-3        |DatabaseUtil                  |I| - default fetchsize        [0]
+2018-10-02 12:54:35,938 |OFBiz-batch-3        |DatabaseUtil                  |I| - named parameters         [ SKIPPED ]
+2018-10-02 12:54:35,938 |OFBiz-batch-3        |DatabaseUtil                  |I| Getting Table Info From Database
+2018-10-02 12:54:35,944 |Test worker          |DelegatorFactoryImpl          |I| Creating new delegator [default] (Test worker)
+2018-10-02 12:54:35,944 |Test worker          |GenericDelegator              |I| Doing entity definition check...
+2018-10-02 12:54:35,944 |Test worker          |ModelEntityChecker            |I| [initReservedWords] array length = 1025
+2018-10-02 12:54:35,944 |OFBiz-batch-3        |GenericDelegator              |I| Delegator "default" initializing helper "localmysql" for entity group "org.apache.ofbiz".
+2018-10-02 12:54:35,945 |OFBiz-batch-3        |GenericDelegator              |I| Doing database check as requested in entityengine.xml with addMissing=true
+2018-10-02 12:54:35,947 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Product Name is MySQL
+2018-10-02 12:54:35,947 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Product Version is 8.0.12
+2018-10-02 12:54:35,947 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver Name is MySQL Connector/J
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver Version is mysql-connector-java-8.0.12 (Revision: 24766725dc6e017025532146d94c6e6c488fb8f1)
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Driver JDBC Version is 4.2
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| Database Setting/Support Information (those with a * should be true):
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - supports transactions     [true]*
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation None            [false]
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation ReadCommitted   [true]
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation ReadUncommitted [true]
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation RepeatableRead  [true]
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - isolation Serializable    [true]
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - forward only type         [false]
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - scroll sensitive type     [false]
+2018-10-02 12:54:35,948 |OFBiz-batch-3        |DatabaseUtil                  |I| - scroll insensitive type   [true]
+2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - is case sensitive         [true]
+2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores LowerCase          [false]
+2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores MixedCase          [true]
+2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - stores UpperCase          [false]
+2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - max table name length     [64]
+2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - max column name length    [64]
+2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - concurrent connections    [0]
+2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - concurrent statements     [0]
+2018-10-02 12:54:35,949 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Entry          [true]
+2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Intermediate   [false]
+2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - ANSI SQL92 Full           [false]
+2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Core     [true]
+2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Extended [false]
+2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - ODBC SQL Grammar Minimum  [true]
+2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - outer joins               [true]*
+2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - limited outer joins       [true]
+2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - full outer joins          [false]
+2018-10-02 12:54:35,950 |OFBiz-batch-3        |DatabaseUtil                  |I| - group by                  [true]*
+2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - group by not in select    [true]
+2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - column aliasing           [true]
+2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - order by not in select    [false]
+2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - alter table add column    [true]*
+2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - non-nullable column       [true]*
+2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - default fetchsize        [0]
+2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| - named parameters         [ SKIPPED ]
+2018-10-02 12:54:35,951 |OFBiz-batch-3        |DatabaseUtil                  |I| Getting Table Info From Database
+2018-10-02 12:54:35,958 |Test worker          |GenericDelegator              |I| Doing entity definition check...
+2018-10-02 12:54:35,958 |Test worker          |ModelEntityChecker            |I| [initReservedWords] array length = 1025
+2018-10-02 12:54:35,958 |OFBiz-batch-2        |GenericDelegator              |I| Delegator "default" initializing helper "localmysql" for entity group "org.apache.ofbiz".
+2018-10-02 12:54:35,958 |OFBiz-batch-2        |GenericDelegator              |I| Doing database check as requested in entityengine.xml with addMissing=true
+2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Product Name is MySQL
+2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Product Version is 8.0.12
+2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Driver Name is MySQL Connector/J
+2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Driver Version is mysql-connector-java-8.0.12 (Revision: 24766725dc6e017025532146d94c6e6c488fb8f1)
+2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Driver JDBC Version is 4.2
+2018-10-02 12:54:35,960 |OFBiz-batch-2        |DatabaseUtil                  |I| Database Setting/Support Information (those with a * should be true):
+2018-10-02 12:54:35,961 |OFBiz-batch-2        |DatabaseUtil                  |I| - supports transactions     [true]*
+2018-10-02 12:54:35,961 |OFBiz-batch-2        |DatabaseUtil                  |I| - isolation None            [false]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - isolation ReadCommitted   [true]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - isolation ReadUncommitted [true]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - isolation RepeatableRead  [true]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - isolation Serializable    [true]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - forward only type         [false]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - scroll sensitive type     [false]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - scroll insensitive type   [true]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - is case sensitive         [true]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - stores LowerCase          [false]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - stores MixedCase          [true]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - stores UpperCase          [false]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - max table name length     [64]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - max column name length    [64]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - concurrent connections    [0]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - concurrent statements     [0]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - ANSI SQL92 Entry          [true]
+2018-10-02 12:54:35,962 |OFBiz-batch-2        |DatabaseUtil                  |I| - ANSI SQL92 Intermediate   [false]
+2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - ANSI SQL92 Full           [false]
+2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - ODBC SQL Grammar Core     [true]
+2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - ODBC SQL Grammar Extended [false]
+2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - ODBC SQL Grammar Minimum  [true]
+2018-10-02 12:54:35,963 |OFBiz-batch-2        |DatabaseUtil                  |I| - outer joins               [true]*
+]]></system-out>
+  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Tue Oct 02 12:54:35 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+</testsuite>
