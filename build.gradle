@@ -159,6 +159,7 @@ dependencies {
     compile 'org.jsoup:jsoup:1.11.2'
 	compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.26-b03'
 	compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.26-b03'
+	compile 'org.postgresql:postgresql:42.2.3'
 
     // ofbiz unit-test compile libs
     testCompile 'org.mockito:mockito-core:2.13.0'
