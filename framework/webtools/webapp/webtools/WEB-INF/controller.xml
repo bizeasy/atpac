@@ -27,7 +27,7 @@ under the License.
     <description>WebTools Site Configuration File</description>
 
     <handler name="ftl" type="view" class="org.apache.ofbiz.webapp.ftl.FreeMarkerViewHandler"/>
-
+	<handler name="soap" type="request" class="org.apache.ofbiz.webapp.event.SOAPEventHandler"/>
     <!-- Events to run on every request before security (chains exempt) -->
     <!--
     <preprocessor>

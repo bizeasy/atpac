@@ -271,9 +271,10 @@ under the License.
             location="org.apache.ofbiz.common.CommonServices" invoke="streamTest">
         <implements service="serviceStreamInterface"/>
     </service>
-
+	
+	
     <service name="ping" engine="java" export="true" require-new-transaction="true"
-            location="org.apache.ofbiz.common.CommonServices" invoke="ping">
+            location="org.apache.ofbiz.common.CommonServices" invoke="ping" auth="true">
         <description>Test Ping Service</description>
         <attribute name="message" type="String" mode="INOUT" optional="true"/>
     </service>

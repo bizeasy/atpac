@@ -480,6 +480,8 @@ if (selectedService) {
 
     if ("true".equals(showWsdl)) {
         try {
+			Debug.log("http://${request.getServerName()}:${EntityUtilProperties.getPropertyValue("url", "port.http", "80", delegator)}${parameters._CONTROL_PATH_}/SOAPService");
+			
             wsdl = curServiceModel.toWSDL("http://${request.getServerName()}:${EntityUtilProperties.getPropertyValue("url", "port.http", "80", delegator)}${parameters._CONTROL_PATH_}/SOAPService")
             curServiceMap.wsdl = UtilXml.writeXmlDocument(wsdl)
         } catch (WSDLException ex) {

@@ -1,0 +1,15 @@
+/.gradle/
+/.hgignore
+/.settings/
+/.xmlcatalog.xml
+/APACHE2_HEADER
+/LICENSE
+/NOTICE
+/OPTIONAL_LIBRARIES
+/README.adoc
+/README.md
+/VERSION
+/applications/
+/framework/
+/plugins/
+/build/
