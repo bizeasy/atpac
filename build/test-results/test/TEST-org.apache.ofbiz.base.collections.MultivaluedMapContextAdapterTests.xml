@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.ofbiz.base.collections.MultivaluedMapContextAdapterTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-02-14T05:13:11" hostname="vikram-workstation" time="0.014">
+  <properties/>
+  <testcase name="valuesBasic" classname="org.apache.ofbiz.base.collections.MultivaluedMapContextAdapterTests" time="0.005"/>
+  <testcase name="entrySetBasic" classname="org.apache.ofbiz.base.collections.MultivaluedMapContextAdapterTests" time="0.005"/>
+  <testcase name="containsValueBasic" classname="org.apache.ofbiz.base.collections.MultivaluedMapContextAdapterTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
