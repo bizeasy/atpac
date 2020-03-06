@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.apache.ofbiz.base.util.UtilCodecTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-02-14T05:13:11" hostname="vikram-workstation" time="0.061">
+<testsuite name="org.apache.ofbiz.base.util.UtilCodecTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-03-06T11:08:33" hostname="LAPTOP-FHJVNB38" time="0.449">
   <properties/>
-  <testcase name="canonicalizeRevealsEscapedXSS" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.06"/>
-  <testcase name="testGetEncoder" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.0"/>
-  <testcase name="checkStringForHtmlStrictNoneDetectsXSS" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.0"/>
-  <testcase name="testCheckStringForHtmlStrictNone" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="canonicalizeRevealsEscapedXSS" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.364"/>
+  <testcase name="testGetEncoder" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.002"/>
+  <testcase name="checkStringForHtmlStrictNoneDetectsXSS" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.001"/>
+  <testcase name="testCheckStringForHtmlStrictNone" classname="org.apache.ofbiz.base.util.UtilCodecTests" time="0.081"/>
+  <system-out><![CDATA[2020-03-06 16:38:33,894 |Test worker          |UtilCodec                     |E| Canonicalization (format consistency, character escaping that is mixed or double, etc) error for attribute named [double-encoding], String [%2%353Cscript]: org.apache.ofbiz.base.util.UtilCodec$IntrusionException: Input validation failure
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
