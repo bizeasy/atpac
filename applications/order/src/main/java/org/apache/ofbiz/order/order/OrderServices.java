@@ -1188,6 +1188,8 @@ public class OrderServices {
             reserveInventory = false;
         }
 
+        Debug.log("orderItemShipGroupInfo =================="+orderItemShipGroupInfo);
+        
         // START inventory reservation
         // decrement inventory available for each OrderItemShipGroupAssoc, within the same transaction
         if (UtilValidate.isNotEmpty(orderItemShipGroupInfo)) {
@@ -1206,7 +1208,10 @@ public class OrderServices {
                         }
                     }
                     GenericValue orderItemShipGroup = orderItemShipGroupAssoc.getRelatedOne("OrderItemShipGroup", false);
+                    Debug.log("orderItemShipGroup =================="+orderItemShipGroup);
                     String shipGroupFacilityId = orderItemShipGroup.getString("facilityId");
+                    Debug.log("shipGroupFacilityId =================="+shipGroupFacilityId);
+
                     String itemStatus = orderItem.getString("statusId");
                     if ("ITEM_REJECTED".equals(itemStatus) || "ITEM_CANCELLED".equals(itemStatus) || "ITEM_COMPLETED".equals(itemStatus)) {
                         Debug.logInfo("Order item [" + orderItem.getString("orderId") + " / " + orderItem.getString("orderItemSeqId") + "] is not in a proper status for reservation", module);
@@ -1266,8 +1271,10 @@ public class OrderServices {
                                     // use the quantity from the orderItemShipGroupAssoc, NOT the orderItem, these are reserved by item-group assoc
                                     reserveInput.put("quantity", orderItemShipGroupAssoc.getBigDecimal("quantity"));
                                     reserveInput.put("userLogin", userLogin);
+                                    Debug.log("reserveInput ======================="+reserveInput);
                                     Map<String, Object> reserveResult = dispatcher.runSync("reserveStoreInventory", reserveInput);
-
+                                    Debug.log("reserveResult ======================="+reserveResult);
+                                    
                                     if (ServiceUtil.isError(reserveResult)) {
                                         String invErrMsg = "The product ";
                                         invErrMsg += getProductName(product, orderItem);

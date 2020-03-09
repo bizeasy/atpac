@@ -302,6 +302,8 @@ public class OrderEvents {
 	    String paymentMethod = (String) context.get("paymentMethod");
 	    String shipGroupContactMechId = null;
 	    
+	    
+	    
 	    Map<String, Object> person = UtilMisc.toMap(
                 "firstName", customerName,
                 "preferredCurrencyUomId", "INR",
@@ -432,7 +434,7 @@ public class OrderEvents {
 			
 			try{
 				ShoppingCartItem item = null;
-				if(UtilValidate.isNotEmpty(prodQtyMap.get("price"))){
+				if(UtilValidate.isNotEmpty(prodQtyMap.get("price")) && !(((BigDecimal)prodQtyMap.get("price")).equals(BigDecimal.ZERO))){
 					Debug.log("usd =============="+prodQtyMap.get("price"));
 					item = ShoppingCartItem.makeItem(null, productId, null, quantity, (BigDecimal)prodQtyMap.get("price"), null, null, null, null, null, null, null, null, null, null, null, dispatcher, cart, null, null, null, Boolean.TRUE, Boolean.TRUE);
 					item.setBasePrice((BigDecimal)prodQtyMap.get("price"));
@@ -455,24 +457,25 @@ public class OrderEvents {
 	    cart.setAllShippingContactMechId(shipGroupContactMechId);
 		cart.setAllMaySplit(Boolean.FALSE);
 		
-		String carrierPartyId="UPS";String shipmentMethodTypeId="STANDARD";
-		try{
-			List<EntityExpr> exprs = UtilMisc.toList(EntityCondition.makeCondition("pincode", EntityOperator.EQUALS, postalCode));
-	        EntityCondition cond = EntityCondition.makeCondition(exprs, EntityOperator.AND);
-	        List<GenericValue> carrierPincodesPriorities = EntityQuery.use(delegator).from("CarrierPincodesPriority")
-	                .where(cond).queryList();
-	        if(UtilValidate.isNotEmpty(carrierPincodesPriorities)){
-	        	GenericValue carrierPincodesPriority = EntityUtil.getFirst(carrierPincodesPriorities);
-	        	if(UtilValidate.isNotEmpty(carrierPincodesPriority)){
-	        		carrierPartyId=carrierPincodesPriority.getString("partyId");
-	        		shipmentMethodTypeId=carrierPincodesPriority.getString("shipmentMethodTypeId");
-	        	}
-	        }
-		}
-		catch (Exception exc) {
-			Debug.logError("Error Fetching Carrier and Shipment Method Type" + exc.getMessage(), module);
-			return ServiceUtil.returnError("Error Fetching Carrier and Shipment Method Type");
-        }
+		String carrierPartyId="_NA_";String shipmentMethodTypeId="STANDARD";
+		/*
+		 * try{ List<EntityExpr> exprs =
+		 * UtilMisc.toList(EntityCondition.makeCondition("pincode",
+		 * EntityOperator.EQUALS, postalCode)); EntityCondition cond =
+		 * EntityCondition.makeCondition(exprs, EntityOperator.AND); List<GenericValue>
+		 * carrierPincodesPriorities =
+		 * EntityQuery.use(delegator).from("CarrierPincodesPriority")
+		 * .where(cond).queryList();
+		 * if(UtilValidate.isNotEmpty(carrierPincodesPriorities)){ GenericValue
+		 * carrierPincodesPriority = EntityUtil.getFirst(carrierPincodesPriorities);
+		 * if(UtilValidate.isNotEmpty(carrierPincodesPriority)){
+		 * carrierPartyId=carrierPincodesPriority.getString("partyId");
+		 * shipmentMethodTypeId=carrierPincodesPriority.getString("shipmentMethodTypeId"
+		 * ); } } } catch (Exception exc) {
+		 * Debug.logError("Error Fetching Carrier and Shipment Method Type" +
+		 * exc.getMessage(), module); return
+		 * ServiceUtil.returnError("Error Fetching Carrier and Shipment Method Type"); }
+		 */
 		
 		cart.setAllCarrierPartyId(carrierPartyId);
         cart.setAllShipmentMethodTypeId(shipmentMethodTypeId);

@@ -456,7 +456,7 @@ under the License.
                 <entity-one entity-name="PartyNameView" value-field="currentOrganization">
                     <field-map field-name="partyId" from-field="organizationPartyId"/>
                 </entity-one>
-                <set field="logoImageUrl" value="/images/atpac-logo.jpeg"/>
+                <set field="logoImageUrl" value="/images/shettymart.jpg"/>
                 <!--<set field="defaultFontFamily" value="Arial"/>-->
             </actions>
             <widgets>
@@ -478,7 +478,7 @@ under the License.
         <section>
             <actions>
                 <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
-                <set field="logoImageUrl" value="/images/atpac-logo.jpeg" global="true"/>
+                <set field="logoImageUrl" value="/images/shettymart.jpg" global="true"/>
                 <property-to-field resource="fop.properties" field="defaultFontFamily" property="fop.font.family" default="NotoSans"/>
             </actions>
             <widgets>
@@ -491,7 +491,7 @@ under the License.
     <screen name="GlobalFoDecorator">
         <section>
             <actions>
-                <set field="layoutSettings.commonHeaderImageUrl" value="/images/atpac-logo.jpeg"/>
+                <set field="layoutSettings.commonHeaderImageUrl" value="/images/shettymart.jpg"/>
             </actions>
             <widgets>
                 <platform-specific>
@@ -511,7 +511,7 @@ under the License.
     <screen name="FoError">
         <section>
             <actions>
-                <set field="logoImageUrl" value="/images/atpac-logo.jpeg"/>
+                <set field="logoImageUrl" value="/images/shettymart.jpg"/>
             </actions>
             <widgets>
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">

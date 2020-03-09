@@ -220,6 +220,9 @@ public class PriceServices {
         }
         EntityCondition productPriceEc = EntityCondition.makeCondition(productPriceEcList, EntityOperator.AND);
 
+        Debug.log("productPriceEc ========================="+productPriceEc);
+        
+        
         // for prices, get all ProductPrice entities for this productId and currencyUomId
         List<GenericValue> productPrices = null;
         try {
@@ -228,7 +231,7 @@ public class PriceServices {
             Debug.logError(e, "An error occurred while getting the product prices", module);
         }
         productPrices = EntityUtil.filterByDate(productPrices, true);
-
+        Debug.log("productPrices ========================="+productPrices);
         // ===== get the prices we need: list, default, average cost, promo, min, max =====
         // if any of these prices is missing and this product is a variant, default to the corresponding price on the virtual product
         GenericValue listPriceValue = getPriceValueForType("LIST_PRICE", productPrices, virtualProductPrices);

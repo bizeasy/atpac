@@ -375,7 +375,7 @@ access. For a detailed description see the core/docs/entityconfig.html file.
         <read-data reader-name="ext-demo"/>
         <inline-jdbc
                 jdbc-driver="com.mysql.jdbc.Driver"
-                jdbc-uri="jdbc:mysql://127.0.0.1/atpac-orig?autoReconnect=true&amp;characterEncoding=UTF-8"
+                jdbc-uri="jdbc:mysql://127.0.0.1/atpac?autoReconnect=true&amp;characterEncoding=UTF-8"
                 jdbc-username="ofbiz"
                 jdbc-password="ofbiz"
                 isolation-level="ReadCommitted"

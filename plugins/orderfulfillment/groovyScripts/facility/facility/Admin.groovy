@@ -5,7 +5,7 @@
 	import org.apache.ofbiz.entity.condition.*;
 	import org.apache.ofbiz.service.ServiceUtil;
 	
-	/*if(UtilValidate.isEmpty(parameters.productStoreId) && UtilValidate.isEmpty(globalContext.productStoreId) && UtilValidate.isNotEmpty(session.getAttribute("GlproductStoreId"))){
+	if(UtilValidate.isEmpty(parameters.productStoreId) && UtilValidate.isEmpty(globalContext.productStoreId) && UtilValidate.isNotEmpty(session.getAttribute("GlproductStoreId"))){
 		parameters.productStoreId=session.getAttribute("GlproductStoreId");
 		globalContext.productStoreId= session.getAttribute("GlproductStoreId");
 	}
@@ -15,7 +15,7 @@
 		globalContext.facilityId= session.getAttribute("GlfacilityId");
 	}
 	
-	exprsFrom = [EntityCondition.makeCondition("productStoreGroupId", EntityOperator.EQUALS, "LOGISTICS_CLIENTS")];
+	/*exprsFrom = [EntityCondition.makeCondition("productStoreGroupId", EntityOperator.EQUALS, "LOGISTICS_CLIENTS")];
 	ecl = EntityCondition.makeCondition(exprsFrom, EntityOperator.AND);
 	productStoreGrpMembers = from("ProductStoreGroupMember").where(exprsFrom).queryList();
 	if(UtilValidate.isNotEmpty(productStoreGrpMembers)){
@@ -27,17 +27,19 @@
 		}
 	}*/
 	
-	parameters.productStoreId = "9000";
-	globalContext.productStoreId = "9000";
+	productStores = from("ProductStore").queryList();
 	
-	parameters.facilityId = "WebStoreWarehouse";
-	globalContext.facilityId = "WebStoreWarehouse";
+/*
+ * parameters.productStoreId = "9000"; globalContext.productStoreId = "9000";
+ * 
+ * parameters.facilityId = "WebStoreWarehouse"; globalContext.facilityId =
+ * "WebStoreWarehouse";
+ */
 	
-	exprsFrom1 = [EntityCondition.makeCondition("productStoreId", EntityOperator.EQUALS, "9000")];
-	productStores = from("ProductStore").where(exprsFrom1).queryList();
+	
 	context.productStores=productStores;
 	
-	exprsFrom2= [EntityCondition.makeCondition("facilityTypeId", EntityOperator.EQUALS, "WAREHOUSE")];
+	exprsFrom2= [EntityCondition.makeCondition("facilityTypeId", EntityOperator.IN, ["WAREHOUSE", "RETAIL_STORE"])];
 	facilityList = from("Facility").where(exprsFrom2).queryList();
 	context.facilityList=facilityList;
 	if(UtilValidate.isEmpty(parameters.productStoreId) && UtilValidate.isEmpty(parameters.facilityId)){

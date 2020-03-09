@@ -190,6 +190,10 @@ if (action) {
             // Ignore
         }
     }
+	
+	Debug.log("facilityId ============="+facilityId);
+	Debug.log("locations ============="+EntityUtil.getFieldListFromEntityList(facilityLocations, "locationSeqId", true));
+	Debug.log("prods ============="+EntityUtil.getFieldListFromEntityList(prods, "productId", true));
 	mainCond = EntityCondition.makeCondition(
 		[
 		 EntityCondition.makeCondition("productId", EntityOperator.IN,EntityUtil.getFieldListFromEntityList(prods, "productId", true)),
@@ -198,6 +202,7 @@ if (action) {
 		],
 		EntityOperator.AND)
 	List inventoryItems=from("InventoryItemAndDetail").where(mainCond).queryList();
+	Debug.log("inventoryItems ============="+inventoryItems);
 	List orderIdsList = EntityUtil.getFieldListFromEntityList(inventoryItems,"orderId",true);
 	
 	orderItemCond = EntityCondition.makeCondition(
