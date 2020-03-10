@@ -16,21 +16,12 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-<div id="footer">
-    <ul>
-        <li class="first">${nowTimestamp?datetime?string.short} - <a href="<@ofbizUrl>ListTimezones</@ofbizUrl>">${timeZone.getDisplayName(timeZone.useDaylightTime(), Static["java.util.TimeZone"].LONG, locale)}</a></li>
-        <li><a href="<@ofbizUrl>ListLocales</@ofbizUrl>">${locale.getDisplayName(locale)}</a></li>
-        <li class="last"><a href="<@ofbizUrl>ListVisualThemes</@ofbizUrl>">${uiLabelMap.CommonVisualThemes}</a></li>
-    </ul>
+<div id="footer" >
+ 
   <p>
     <div class="poweredBy"><span class="footerTextColour">${uiLabelMap.CommonPoweredBy} 
-        <a href="http://ofbiz.apache.org" class="noicon">OFBiz </a></span><span class="footerTextColour">Copyright 2001-${nowTimestamp?string("yyyy")} 
-        <a href="http://www.apache.org" class="noicon">The Apache Software Foundation - www.apache.org</a></span> 
-        <span class="footerTextColour">
-            ${uiLabelMap.CommonRelease} <#include "ofbizhome://VERSION" ignore_missing=true/>
-            <#include "ofbizhome://runtime/SvnInfo.ftl" ignore_missing=true/>
-            <#include "ofbizhome://runtime/GitInfo.ftl" ignore_missing=true/>
-        </span>
+        <a href="http://www.beze.in" class="noicon">Biz Easy Solutions </a></span><span class="footerTextColour">
+       
     </div>
   
   </p>

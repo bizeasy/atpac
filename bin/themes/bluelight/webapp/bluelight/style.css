@@ -1082,6 +1082,7 @@ ul#preferences-menu li a.help-link {
 #footer {
     text-align: center;
     padding-bottom: 1em;
+    display: none;
 }
 
 #footer p {

@@ -130,25 +130,21 @@ under the License.
       <ul>
         <#if "Y" == (userPreferences.COMPACT_HEADER)?default("N")>
             <#if shortcutIcon?has_content>
-                <#if organizationLogoLinkURL?has_content>
-                    <li><a href="<@ofbizUrl>${logoLinkURL}</@ofbizUrl>"><img alt="${layoutSettings.companyName}" src="<@ofbizContentUrl>${StringUtil.wrapString(organizationLogoLinkURL)}</@ofbizContentUrl>" height="16px" width="16px"></a></li>
-                    <#else>
-                    <li class="logo-area"><a href="<@ofbizUrl>${logoLinkURL}</@ofbizUrl>"><img src="<@ofbizContentUrl>${StringUtil.wrapString(shortcutIcon)}</@ofbizContentUrl>" height="16px" width="16px" alt="" /></a></li>
-                </#if>
+                <li class="logo-area"><a href="<@ofbizUrl>/images/shettymart.jpg</@ofbizUrl>"><img src="<@ofbizContentUrl>${StringUtil.wrapString(shortcutIcon)}</@ofbizContentUrl>" height="16px" width="16px" alt="" /></a></li>
           </#if>
         <#else>
           <#if layoutSettings.headerImageUrl??>
-            <#assign headerImageUrl = layoutSettings.headerImageUrl>
+            <#assign headerImageUrl = "/images/shettymart.jpg">
           <#elseif layoutSettings.commonHeaderImageUrl??>
-            <#assign headerImageUrl = layoutSettings.commonHeaderImageUrl>
+            <#assign headerImageUrl = "/images/shettymart.jpg">
           <#elseif layoutSettings.VT_HDR_IMAGE_URL??>
-            <#assign headerImageUrl = layoutSettings.VT_HDR_IMAGE_URL>
+            <#assign headerImageUrl = "/images/shettymart.jpg">
           </#if>
           <#if headerImageUrl??>
                 <#if organizationLogoLinkURL?has_content>
-                    <li><a href="<@ofbizUrl>${logoLinkURL}</@ofbizUrl>"><img alt="${layoutSettings.companyName}" src="<@ofbizContentUrl>${StringUtil.wrapString(organizationLogoLinkURL)}</@ofbizContentUrl>"></a></li>
+                    <li><a href="<@ofbizUrl>/images/shettymart.jpg</@ofbizUrl>"><img alt="${layoutSettings.companyName}" src="<@ofbizContentUrl>/images/shettymart.jpg</@ofbizContentUrl>"></a></li>
                     <#else>
-                    <li class="logo-area"><a href="<@ofbizUrl>${logoLinkURL}</@ofbizUrl>"><img alt="${layoutSettings.companyName}" src="<@ofbizContentUrl>${StringUtil.wrapString(headerImageUrl)}</@ofbizContentUrl>"/></a></li>
+                    <li class="logo-area"><a href="<@ofbizUrl>/images/shettymart.jpg</@ofbizUrl>"><img alt="${layoutSettings.companyName}" src="<@ofbizContentUrl>/images/shettymart.jpg</@ofbizContentUrl>"/></a></li>
                 </#if>
           </#if>
           <#if layoutSettings.middleTopMessage1?has_content && layoutSettings.middleTopMessage1 != " ">
